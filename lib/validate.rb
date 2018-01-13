@@ -1,4 +1,4 @@
-class Validations
+class Validate
   def self.valid_input?(input)
     begin
       elements = eval(input)
