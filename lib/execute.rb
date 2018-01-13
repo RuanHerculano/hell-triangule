@@ -1,10 +1,4 @@
 class Execute
-  def self.find_maxinum(array, index)
-    maxinum = [array[index], array[index + 1].to_i].max
-    index = array.index(maxinum)
-    return maxinum, index
-  end
-
   def self.hell_triangle(input)
     array_of_arrays = eval(input)
     index = 0
@@ -17,4 +11,11 @@ class Execute
 
     result
   end
+
+  def self.find_maxinum(array, index)
+    maxinum = [array[index], array[index + 1].to_i].max
+    index = array.index(maxinum)
+    return maxinum, index
+  end
+  private_class_method :find_maxinum
 end

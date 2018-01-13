@@ -6,7 +6,7 @@ class Main
   def self.main
     input = Read.input_console
     array = Execute.hell_triangle(input)
-    Message.result(array)
+    puts Message.result(array)
   end
 end
 
