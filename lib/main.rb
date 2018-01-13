@@ -5,8 +5,8 @@ require './lib/message'
 class Main
   def self.main
     input = Read.input_console
-
-    Message.result(Execute.hell_triangle(input))
+    array = Execute.hell_triangle(input)
+    Message.result(array)
   end
 end
 

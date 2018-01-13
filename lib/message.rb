@@ -1,6 +1,6 @@
 class Message
   def self.result(numbers)
-    amount_numbers = numbers.count
+    amount_numbers = numbers.count - 1
     sum = 0
     index = 0
 
@@ -9,13 +9,13 @@ class Message
 
       sum += number
 
-      if index == amount_numbers - 1
-        puts " = #{sum}"
-      else
+      if index != amount_numbers
         print ' + '
       end
 
       index += 1
     end
+
+    puts " = #{sum}"
   end
 end
