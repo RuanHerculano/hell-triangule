@@ -1,6 +1,6 @@
 require './lib/execute'
 
-RSpec.describe Execute do
+describe Execute do
   describe '#hell_triangle' do
     context 'when receive valid array' do
       let(:valid_array) { '[[6],[3,5],[9,7,1],[4,6,8,4]]' }

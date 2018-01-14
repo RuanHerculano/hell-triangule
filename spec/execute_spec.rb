@@ -1,6 +1,6 @@
 require './lib/message'
 
-Rspec.describe Message do
+describe Message do
   describe '.message' do
     context 'when receive valid array' do
       let(:valid_array) { [6, 5, 7, 8] }

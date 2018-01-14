@@ -1,6 +1,6 @@
 require './lib/validate'
 
-Rspec.describe Validate do
+describe Validate do
   describe '.validate' do
     context 'when received valid array' do
       let(:valid_array) { '[[6],[3,5],[9,7,1],[4,6,8,4]]' }
