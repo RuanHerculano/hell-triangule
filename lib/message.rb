@@ -14,8 +14,8 @@ class Message
 
     numbers.each do |number|
       message.concat(number.to_s)
-      sum += number
       message.concat(' + ') if index != amount_numbers
+      sum += number
       index += 1
     end
 
