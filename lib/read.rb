@@ -7,7 +7,7 @@ class Read
     begin
       puts 'Digite um array válido'
       input = STDIN.gets.chomp
-    end while !Validate.valid_input?(input)
+    end while !Validate.valid_hell_triangle?(input)
 
     input
   end

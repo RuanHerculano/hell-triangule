@@ -1,16 +1,16 @@
 class Validate
-  def self.valid_input?(input)
+  def self.valid_hell_triangle?(input)
     begin
-      elements = eval(input)
+      hell_triangle = eval(input)
 
-      elements_number = 1
+      elements_per_level = 1
 
-      elements.each do |element|
-        if element.count != elements_number
+      hell_triangle.each do |level|
+        if level.count != elements_per_level
           return false
         end
 
-        elements_number += 1
+        elements_per_level += 1
       end
     rescue SyntaxError, Exception
       return false

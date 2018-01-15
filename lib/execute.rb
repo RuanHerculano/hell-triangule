@@ -1,20 +1,20 @@
 class Execute
   def self.hell_triangle(input)
-    array_of_arrays = eval(input)
+    triangle = eval(input)
     index = 0
     result = []
 
-    array_of_arrays.each do |array|
-      maxinum, index = find_maxinum(array, index)
+    triangle.each do |level|
+      maxinum, index = find_maxinum(level, index)
       result.push(maxinum)
     end
 
     result
   end
 
-  def self.find_maxinum(array, index)
-    maxinum = [array[index], array[index + 1].to_i].max
-    index = array.index(maxinum)
+  def self.find_maxinum(level, index)
+    maxinum = [level[index], level[index + 1].to_i].max
+    index = level.index(maxinum)
     return maxinum, index
   end
   private_class_method :find_maxinum

@@ -6,7 +6,7 @@ describe Validate do
       let(:valid_array) { '[[6],[3,5],[9,7,1],[4,6,8,4]]' }
 
       it 'has the return true' do
-        expect(Validate.valid_input?(valid_array)).to eql(true)
+        expect(Validate.valid_hell_triangle?(valid_array)).to eql(true)
       end
     end
 
@@ -14,7 +14,7 @@ describe Validate do
       let(:invalid_array) { '[6],[3,5],[9,7,1],[4,6,8,4]]' }
 
       it 'has the return false' do
-        expect(Validate.valid_input?(invalid_array)).to eql(false)
+        expect(Validate.valid_hell_triangle?(invalid_array)).to eql(false)
       end
     end
   end
